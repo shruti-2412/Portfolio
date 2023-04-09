@@ -1,0 +1,45 @@
+.list {
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+  }
+  
+  li:before {
+    content: "\25BA \0020";
+    font-size: 6px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+  }
+
+body {
+  background-color: #FDF4F5;
+}
+
+hr{
+  border-style: dotted none none;
+  color: #C0DBEA;
+  width: 8%;
+  border-width: 5px;
+}
+
+#education,#projects,#skills,#co,#connect{
+  margin: 20px;
+}
+
+h1{
+  font-size:40px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color:#89375F;
+}
+
+img{
+  float: right;
+  width: "190";
+}
+
+h3{
+  color:#89375F;
+  background-color: #e9b5cc;
+}
