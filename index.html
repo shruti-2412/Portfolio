@@ -4,25 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio | Shruti Chandak</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="icon" href="./assests/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  </head>
+
 <body>
-    <img src="girl.png" alt="girl image">
-    <h1>Shruti Chandak</h1>
-    <p><em>2<sup>nd</sup> year Computer Engineering student at Cummins College of Engineering for Women, Pune</em></p>
-    <p>I ❤️ web development and want to master the skill</p>
-    <nav>
-    <ul>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#co">Co-curricular</a></li>
-    <li><a href="#connect">Contact with me</a></li>
-</ul>
-</nav>
-    <hr>
-    <section id="education">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white text-dark fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#about">
+          <img id="logo" src="./assests/sc.png" alt="logo" height="80">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div>
+    <img id="girl-img" src="./assests/girl-img.png" alt="girl image" >
+  </div>
+  <div id="about">
+    <h3 id="hi">Hi There,</h3>
+    <h1 id="name"> I'm Shruti Chandak</h1>
+    <p id="passionate">I am passionate about </p>
+    <span id="element"></span>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Development', 'Machine learning'],
+        typeSpeed: 50,
+      });
+    </script>
+</div>
+
+ <!-- Education -->
+<div id="education">
     <h3>Education</h3>
     <p>Currently a 2nd-year student at MKSSS Cummins College of Engineering for Women, Pune<br>
         Bachelor of Technology in Computer Engineering <br> 
@@ -54,61 +94,183 @@
         </tr>
     </tbody>
     </table>
-</section>
-    <hr>
-    <section id="projects">
-    <h3>Projects</h3>
-    <ul>
-    <li><h4>Railway Reservation System | <i>Java, Data Structures</i></h4> 
-        <ul>
-            <li class="list">Created a Data Structure Project in Java for implementing railway reservation</li>
-            </ul>
-    </li>
-    <li>
-        <h4>Vaccination Database Management System | <i>MySQL , HTML, CSS, Node.js, Javascrpit</i></h4>
-        <ul>
-            <li class="list">Developed a web application for vaccination registration</li>
-            <li class="list">User can register for any vaccine from the website and can see details for a particular vaccine</li>
-        </ul>
-    </li>
-    <li>
-        <h4>Quiz Game Using Tkinter | <i>Python, Tkinter library</i></h4>
-        <ul>
-            <li class="list">Created a basic GUI MCQ-based quiz game using Tkinter module in python</li>
-            <li class="list">User has to solve MCQ question and his/her score is displayed at the end of the game</li>
-        </ul>
-    </li>
-    </ul>
-</section>
-    <hr>
-    <section id="skills">
+</div>
+
+ <!-- Projects -->
+<div id="projects">
+    <h2>Recent Projects</h2>
+
+    <div class="container" style="padding-top:40px ;">
+    <div class="row">
+
+    <div class="col-md-3 mx-5">
+    <div class="card border-secondary" id="card1">
+        <div class="card-body">
+          <h5 class="card-title">Book Recommendation System</h5>
+          <h6 class="card-subtitle mb-2">Machine learning, Flask</h6>
+          <p class="card-text">Created a book recommendation system using collaborative filtering and added a UI using flask framework</p>
+          <a href="https://github.com/shruti-2412/Book-Recommendation-System" target="_blank" class="btn btn-outline-primary">Github Link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mx-5">
+        <div class="card border-secondary" id="card2">
+            <div class="card-body">
+              <h5 class="card-title ">Vaccination Database System </h5>
+              <h6 class="card-subtitle mb-2">MySQL, HTML, CSS, Node.js</h6>
+              <p class="card-text">Developed a web application for vaccination registration using MySQL database</p>
+              <a href="https://github.com/shruti-2412/Vaccination-Management-System" target="_blank" class="btn btn-outline-primary">Github Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mx-5">
+          <div class="card border-secondary" id="card3">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Railway Reservation System</h5>
+                <h6 class="card-subtitle">Java, Data Structures</h6>
+                <p class="card-text">Created a project in Java for implementing railway reservation system using Data Structures</p>
+                <a href="https://github.com/shruti-2412/Railway-Reservation-System" target="_blank" class="btn btn-outline-primary">Github Link</a>
+              </div>
+            </div>
+          </div>
+</div>
+</div>
+
+<div class="container" style="padding-top:20px ;">
+  <div class="row">
+
+  <div class="col-lg-3 mx-5">
+  <div class="card border-secondary" id="card4">
+      <div class="card-body">
+        <h5 class="card-title">Portfolio Website</h5>
+        <h6 class="card-subtitle mb-2">HTML, CSS, Bootstrap 5</h6>
+        <p class="card-text">Created a Portfolio static website </p>
+        <a href="#" target="_blank" class="btn btn-outline-primary">Github Link</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 mx-5">
+      <div class="card border-secondary" id="card5">
+          <div class="card-body">
+            <h5 class="card-title">Vaccination Database System </h5>
+            <h6 class="card-subtitle mb-2 ">MySQL , HTML, CSS, Node.js, Javascript</h6>
+            <p class="card-text">Developed a web application for vaccination registration</p>
+            <a href="#" target="_blank" class="btn btn-outline-primary">Github Link</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 mx-5">
+        <div class="card border-secondary" id="card6">
+            <div class="card-body">
+              <h5 class="card-title text-center">Railway Reservation System</h5>
+              <h6 class="card-subtitle mb-2">Java, Data Structures</h6>
+              <p class="card-text" >Created a Data Structure Project in Java for implementing railway reservation</p>
+              <a href="#" target="_blank" class="btn btn-outline-primary">Github Link</a>
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+</div>
+
+ <!-- Skills -->
+<div id="skills">
     <h3>Technical Skills</h3>
     <ul>
-        <li>Programming Languages: Java, C/C++, JavaScript, SQL, Python</li>
+        <li>Programming Languages: , C/C++, JavaScript, SQL, Python</li>
+        <pre>
+        <span>Java</span>  <span>C/C++</span>  <span>JavaScript</span>  <span>Python</span></pre>
         <li>Scripting Languages: HTML, CSS</li>
         <li>Technologies/Frameworks/Libraries/Tools: MySQL, Flask, Git, GitHub ,VS Code, Eclipse</li>
 
     </ul>
-</section>
-    <hr>
-    <section id="co">
-    <h3>Co-curricular</h3>
-    <ul>
-        <li>Secured 3rd position in Cipher 4.3 - coding competition conducted by Team Loop </li>
-        <li>Participated in Level 1: Flipkart GRiD 4.0 - software development challenge</li>
-        <li>Open source contributor for Hacktoberfest 2022</li>
-    </ul>
-</section>
-<hr>
-        <section id="connect">
-        <h3>Connect with me</h3>
-        <ul>
-            <li><a target="_blank" href="mailto: shrutiachandak123@gmail.com">Gmail</a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/shruti-chandak-854258232/">LinkedIn</a></li>
-            <li><a target="_blank" href="https://github.com/shruti-2412">Github</a></li>
-        </ul>
+</div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" id="footer">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Shruti's Portfolio</h6>
+              <p>
+                Thank you for visiting my personal portfolio website. Connect with me over socials.
+                <br>
+                Keep Rising 🚀.
+              </p>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Useful link</h6>
+              <p>
+                <a class="text-white" href="#about">Home</a>
+            </p>
+              <p>
+                <a class="text-white" href="#education">Education</a>
+              </p>
+              <p>
+                <a class="text-white" href="#projects">Projects</a>
+              </p>
+              <p>
+                <a class="text-white" href="#skills">Skills</a>
+              </p>
+            </div>
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-home mr-3"></i> Karvenagar, Pune</p>
+              <p><i class="fas fa-envelope mr-3"></i> shrutiachandak123@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            </div>
+          </div>
         </section>
-
-
-</body>
+        <!-- Section: Copyright -->
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <div class="p-3">
+                © 2020 Copyright
+              </div>
+            </div>
+  
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <!-- gmail -->
+              <a
+                 class="btn btn-outline-light btn-floating m-1"
+                 class="text-white"
+                 role="button"
+                 ><i class="bi bi-envelope-fill"></i></a>
+  
+              <!-- github -->
+              <a
+                 class="btn btn-outline-light btn-floating m-1"
+                 class="text-white"
+                 role="button" href="https://github.com/shruti-2412"><i class="fab fa-github"></i></a>
+  
+              <!-- linkedin -->
+              <a
+                 class="btn btn-outline-light btn-floating m-1"
+                 class="text-white"
+                 role="button" href="https://www.linkedin.com/in/shruti-chandak-854258232/"><i class="fab fa-linkedin"></i></a>
+  
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <!-- Footer -->
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
 </html>
