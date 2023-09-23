@@ -5,9 +5,9 @@ Welcome to my personal portfolio website! This website showcases my work, skills
 ### Visit the live website: 
 
 ### Features
--Home Page: A brief introduction and overview of who I am.
--Portfolio: Displaying a selection of my best work and projects.
--Skills: Highlighting the technologies and skills I possess.
--Contact: A contact form for visitors to get in touch with me.
+-Home Page: A brief introduction and overview of who I am.  
+-Portfolio: Displaying a selection of my best work and projects.  
+-Skills: Highlighting the technologies and skills I possess.  
+-Contact: A contact form for visitors to get in touch with me.  
 
 
