@@ -1,8 +1,9 @@
-### Portfolio Website
+# Portfolio Website
 
 Welcome to my personal portfolio website! This website showcases my work, skills, and projects. It is built using HTML, CSS, Bootstrap, and JavaScript to create an interactive and visually appealing experience for visitors.
 
 ### Visit the live website: 
+https://shruti-2412.github.io/Portfolio/
 
 ### Features
 - Home Page: A brief introduction and overview of who I am.  
